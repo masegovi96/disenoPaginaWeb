@@ -1,85 +1,42 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseño de Página Web | 3er Cuatrimestre</title>
-    <!-- FontAwesome for Icons -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
+    
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- Mobile Menu Toggle -->
-    <button class="menu-toggle" id="menu-toggle">
+    
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir o cerrar menú lateral">
         <i class="fa-solid fa-bars"></i>
     </button>
 
     <div class="app-container">
-        
-        <!-- Sidebar Navigation -->
-        <aside class="sidebar" id="sidebar">
-            <div class="sidebar-header dropdown-header">
-                <h2>Diseño de Página Web <i class="fa-solid fa-chevron-down"></i></h2>
-            </div>
-            <nav class="sidebar-nav collapse-menu" id="sidebar-nav">
-                <ul>
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link active">
-                            <i class="fa-solid fa-house"></i>
-                            Inicio
-                        </a>
-                    </li>
-                    <li class="nav-item accordion-item">
-                        <div class="nav-link accordion-toggle" style="cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
-                            <div style="display: flex; align-items: center;">
-                                <i class="fa-solid fa-book-open"></i>
-                                Introducción
-                            </div>
-                            <i class="fa-solid fa-chevron-down accordion-icon" style="transition: transform 0.3s ease;"></i>
-                        </div>
-                        <ul class="submenu" style="display: none; padding-left: 1.5rem; list-style: none; margin-top: 0.5rem; margin-bottom: 0.5rem;">
-                            <li class="nav-item" style="margin-bottom: 0.5rem;">
-                                <a href="Introduccion/Herramientas/index.html" class="nav-link" style="font-size: 0.95rem; padding: 0.6rem 1rem;">
-                                    <i class="fa-solid fa-toolbox"></i>
-                                    Herramientas
-                                </a>
-                            </li>
-                            <li class="nav-item" style="margin-bottom: 0.5rem;">
-                                <a href="Introduccion/Proyecto-Final/index.html" class="nav-link" style="font-size: 0.95rem; padding: 0.6rem 1rem;">
-                                    <i class="fa-solid fa-rocket"></i>
-                                    Proyecto Final
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="Introduccion/Actividad-Diagnostico/index.html" class="nav-link" style="font-size: 0.95rem; padding: 0.6rem 1rem;">
-                                    <i class="fa-solid fa-clipboard-question"></i>
-                                    Diagnóstico
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
 
-        <!-- Main Content Area -->
+        
+        <aside class="sidebar" id="sidebar"></aside>
+
+        
         <main class="main-content">
+
             
-            <!-- Hero Section -->
             <section class="hero-section">
                 <span class="hero-tag">Ciclo Escolar</span>
                 <h1 class="hero-title">Bienvenidos alumnos de <span>3er Cuatrimestre</span></h1>
-                <p class="hero-desc" style="text-align: justify; font-size: 1.25rem; line-height: 1.6;">
+                <p class="hero-desc">
                     Esta página servirá como nuestro repositorio y guía principal para la materia de <strong>Diseño de Página Web</strong>. Aquí encontrarás apuntes, tareas, proyectos y recursos importantes para tu desarrollo.
                     <br><br>
                     <strong>Además de subirse al Classroom, podrán encontrar todos los recursos de la clase en el GitHub.</strong>
                 </p>
             </section>
 
-            <!-- Focus of the Subject -->
-            <section style="margin-top: 2rem;">
+            
+            <section class="section-mt">
                 <h2 class="section-title">Enfoque de la Materia</h2>
                 <div class="features-grid">
                     <div class="feature-card">
@@ -89,7 +46,6 @@
                         <h3>Diseño UX / UI</h3>
                         <p>Aprenderemos a pensar en el usuario final. Crearemos experiencias intuitivas, accesibles y estéticamente agradables utilizando principios de Experiencia de Usuario.</p>
                     </div>
-                    
                     <div class="feature-card">
                         <div class="feature-icon">
                             <i class="fa-brands fa-css3-alt"></i>
@@ -97,15 +53,13 @@
                         <h3>HTML & CSS Moderno</h3>
                         <p>Dominaremos la estructura y el estilo visual de la web, pasando por layouts con Flexbox y Grid, hasta animaciones, variables y diseño responsivo.</p>
                     </div>
-                    
                     <div class="feature-card">
                         <div class="feature-icon">
                             <i class="fa-brands fa-bootstrap"></i>
                         </div>
-                        <h3>Frameworks (Bootstrap)</h|3>
+                        <h3>Frameworks (Bootstrap)</h3>
                         <p>Utilizaremos herramientas estándar de la industria como Bootstrap para acelerar el desarrollo y mantener un diseño consistente y adaptable en cualquier dispositivo.</p>
                     </div>
-                    
                     <div class="feature-card">
                         <div class="feature-icon">
                             <i class="fa-brands fa-js"></i>
@@ -116,8 +70,8 @@
                 </div>
             </section>
 
-            <!-- Grading Criteria Table -->
-            <section style="margin-top: 2rem;">
+            
+            <section class="section-mt">
                 <h2 class="section-title">Criterios de Evaluación</h2>
                 <div class="table-container">
                     <table class="eval-table">
@@ -142,7 +96,7 @@
                             <tr>
                                 <td data-label="Criterio" class="criterion-name">Asistencia</td>
                                 <td data-label="Ponderación"><span class="weight-badge">5%</span></td>
-                                <td data-label="Aspectos a Calificar">Asistencia puntual a la sesión. El pase de lista se realiza a las 7:10 AM. Quienes lleguen entre las 7:11 AM y 7:15 AM será considerado como retardo. Después de las 7:15 AM se contabilizará como falta y no se permitirá el acceso al aula.</td>
+                                <td data-label="Aspectos a Calificar">Asistencia puntual a la sesión. El pase de lista se realiza a las 7:10 AM. Quienes lleguen entre las 7:11 AM y 7:15 AM serán considerados retardo. Después de las 7:15 AM se contabilizará como falta y no se permitirá el acceso al aula.</td>
                             </tr>
                             <tr>
                                 <td data-label="Criterio" class="criterion-name">Uso de uniforme</td>
@@ -159,23 +113,32 @@
                 </div>
             </section>
 
-            <!-- Notas Importantes -->
-            <section class="important-notes-section" style="margin-top: 2rem;">
-                <h2 class="section-title">Notas importantes</h2>
-                <div class="notes-content" style="text-align: justify; font-size: 1.15rem; line-height: 1.6; background: var(--bg-alt, #1a1a1a); padding: 2rem; border-radius: 12px; border-left: 4px solid var(--primary-color, #6c63ff);">
-                    <p><strong>Uso de inteligencia artificial:</strong> La IA es una herramienta de apoyo para el aprendizaje, pero no debe sustituir tu capacidad de razonamiento. Queda completamente prohibido el uso de IA para realizar tareas o actividades de participación de forma íntegra. Si se detecta el uso excesivo de estas herramientas en tareas o participaciones, la entrega será anulada y se calificará con 0.</p>
-                    <p style="margin-top: 1rem;"><strong>Integridad en exámenes:</strong> Durante la aplicación de exámenes, el uso de cualquier IA está estrictamente prohibido. En caso de detectar a un alumno utilizándola, se procederá a retirar el examen de inmediato y la calificación será de 0.</p>
-                    <p style="margin-top: 1rem;"><strong>Configuración de herramientas:</strong> Es obligatorio contar con una cuenta de GitHub y un repositorio configurado correctamente para la entrega de tareas y proyectos. El flujo de trabajo para tareas, participaciones y exámenes se gestionará exclusivamente a través de GitHub y Classroom.</p>
+            
+            <section class="important-notes-section section-mt">
+                <h2 class="section-title">Notas Importantes</h2>
+                <div class="notes-content">
+                    <p>
+                        <strong>Uso de inteligencia artificial:</strong> La IA es una herramienta de apoyo para el aprendizaje, pero no debe sustituir tu capacidad de razonamiento. Queda completamente prohibido el uso de IA para realizar tareas o actividades de participación de forma íntegra. Si se detecta el uso excesivo de estas herramientas, la entrega será anulada y se calificará con 0.
+                    </p>
+                    <p>
+                        <strong>Integridad en exámenes:</strong> Durante la aplicación de exámenes, el uso de cualquier IA está estrictamente prohibido. En caso de detectar a un alumno utilizándola, se procederá a retirar el examen de inmediato y la calificación será de 0.
+                    </p>
+                    <p>
+                        <strong>Configuración de herramientas:</strong> Es obligatorio contar con una cuenta de GitHub y un repositorio configurado correctamente para la entrega de tareas y proyectos. El flujo de trabajo para tareas, participaciones y exámenes se gestionará exclusivamente a través de GitHub y Classroom.
+                    </p>
+                    <p>
+                        <strong>Repositorio personal:</strong> Cada alumno debe crear su propio repositorio en GitHub y <strong class="accent-text">agregarme como colaborador</strong> del repositorio para poder revisar el código, dar retroalimentación y validar las entregas. Sin este acceso no se podrán revisar ni calificar los trabajos.
+                    </p>
                 </div>
             </section>
 
-            <footer>
-                <p>&copy; 2026 Materia Diseño de Página Web. Todos los derechos reservados.</p>
-            </footer>
+            <footer></footer>
         </main>
     </div>
 
-    <!-- Scripts -->
+    
+    <script src="js/components.js"></script>
+    
     <script src="js/script.js"></script>
 </body>
 </html>

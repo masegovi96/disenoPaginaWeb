@@ -2,6 +2,8 @@
 
 Repositorio oficial de la materia **Diseño de Página Web** del 3er cuatrimestre. Esta plataforma funciona como sitio informativo complementario al Classroom: aquí encontrarás los lineamientos de la materia, material de clase, actividades y todos los recursos necesarios para tu desarrollo a lo largo del cuatrimestre.
 
+> **Nota:** Este README y el proyecto en general se irán actualizando conforme se avance en la materia. Se agregarán nuevas secciones, actividades y recursos con cada tema visto en clase.
+
 ---
 
 ## ¿Qué encontrarás aquí?
@@ -9,7 +11,7 @@ Repositorio oficial de la materia **Diseño de Página Web** del 3er cuatrimestr
 | Sección | Descripción |
 |---|---|
 | **Inicio** | Presentación de la materia, criterios de evaluación y reglas generales |
-| **Herramientas** | Listado de software, extensiones y recursos en línea utilizados en clase |
+| **Herramientas** | Código de Classroom, repositorio y recursos en línea utilizados en clase |
 | **Actividad Diagnóstico** | Actividad inicial para medir el nivel previo de los alumnos |
 | **Proyecto Final** | Lineamientos, requisitos técnicos y rúbrica de evaluación del proyecto final |
 
@@ -17,39 +19,41 @@ Repositorio oficial de la materia **Diseño de Página Web** del 3er cuatrimestr
 
 ## Estructura del Proyecto
 
-El repositorio se irá alimentando conforme avance el cuatrimestre. Cada tema, unidad o actividad nueva tendrá su propia carpeta dentro del módulo correspondiente. La estructura base es la siguiente y crecerá con el tiempo:
-
 ```
 disenoPaginaWeb/
-├── index.html                        # Página principal (inicio, criterios, reglas)
+├── index.html                             # Página principal (inicio, criterios, reglas)
 ├── css/
-│   └── styles.css                    # Estilos globales del sitio
+│   └── styles.css                         # Estilos globales (modo claro/oscuro, layout)
 ├── js/
-│   └── script.js                     # Scripts principales (menú, acordeón, etc.)
-└── Introduccion/                     # Módulo: Introducción (primera unidad)
-    ├── Herramientas/
-    │   └── index.html                # Herramientas de clase y código de Classroom
-    ├── Actividad-Diagnostico/
-    │   └── index.html                # Actividad diagnóstica inicial
-    └── Proyecto-Final/
-        └── index.html                # Lineamientos completos del proyecto final
+│   ├── components.js                      # Inyección modular de sidebar y footer
+│   └── script.js                          # Scripts: sidebar toggle, tema, acordeón, etc.
+└── introduccion/                          # Módulo: Introducción
+    ├── herramientas/
+    │   └── index.html                     # Herramientas de clase y acceso al Classroom
+    ├── actividad-diagnostico/
+    │   └── index.html                     # Actividad diagnóstica inicial
+    └── proyecto-final/
+        └── index.html                     # Lineamientos completos del proyecto final
 # ...
 # Se agregarán nuevas carpetas por módulo/tema conforme avance el cuatrimestre
 ```
 
-> **Nota:** La navegación lateral del sitio también se actualizará con cada nuevo tema agregado.
+> La navegación lateral del sitio también se actualizará con cada nuevo tema agregado.
 
 ---
 
 ## Stack Técnico
 
-Este sitio fue construido con tecnologías simples e intencionalmente sin frameworks complejos, para que los alumnos puedan leerlo y aprender de él:
+Sitio construido con tecnologías simples e intencionalmente sin frameworks complejos, para que los alumnos puedan leerlo y aprender de él:
 
-- **HTML5** — Estructura semántica
-- **CSS3** — Variables CSS, Flexbox, Grid, glassmorphism
-- **JavaScript (Vanilla)** — Sidebar mobile, acordeón de navegación
-- **Font Awesome 6** — Iconografía
-- **Google Fonts (Outfit)** — Tipografía principal
+| Tecnología | Uso |
+|---|---|
+| **HTML5** | Estructura semántica |
+| **CSS3** | Variables CSS, Flexbox, Grid, glassmorphism, modo claro/oscuro |
+| **JavaScript (Vanilla)** | Sidebar colapsable, acordeón de navegación, toggle de tema |
+| **Bootstrap 5** | Layout y componentes en páginas internas (Proyecto Final, Diagnóstico) |
+| **Font Awesome 6** | Iconografía |
+| **Google Fonts (Outfit)** | Tipografía principal |
 
 ---
 
@@ -63,7 +67,7 @@ Los alumnos desarrollarán un **Portafolio Web Personal** que deberá:
 - Publicarse en internet (GitHub Pages, Netlify o Vercel)
 - Subirse a un repositorio personal de GitHub con múltiples commits organizados
 
-> Consulta todos los detalles, contenido mínimo, rúbrica y condiciones en la sección **Proyecto Final** del sitio: [`Introduccion/Proyecto-Final/index.html`](Introduccion/Proyecto-Final/index.html)
+> Consulta todos los detalles, contenido mínimo, rúbrica y condiciones en la sección **Proyecto Final** del sitio: [`introduccion/proyecto-final/index.html`](introduccion/proyecto-final/index.html)
 
 ---
 
@@ -72,7 +76,7 @@ Los alumnos desarrollarán un **Portafolio Web Personal** que deberá:
 - **Asistencia**: Puntualidad requerida — tolerancia máxima de 5 minutos.
 - **Entregas**: Exclusivamente vía GitHub y Google Classroom. No se aceptan entregas por otro medio.
 - **Inteligencia Artificial**: Prohibido su uso íntegro para resolver tareas o exámenes. Puede usarse como apoyo, no como sustituto del aprendizaje.
-- **Repositorio**: Cada alumno debe mantener su propio repositorio organizado con commits frecuentes y descriptivos.
+- **Repositorio**: Cada alumno debe mantener su propio repositorio organizado con commits frecuentes y descriptivos, e **invitar al profesor como colaborador**.
 - **Proyecto Final**: No se aceptan proyectos incompletos, sin publicar en línea, con código desordenado o sin diseño responsive.
 
 ---
