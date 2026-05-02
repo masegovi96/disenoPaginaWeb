@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final | Diseño de Página Web</title>
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="app-container">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header dropdown-header">
+                <h2>Diseño de Página Web <i class="fa-solid fa-chevron-down"></i></h2>
+            </div>
+            <nav class="sidebar-nav collapse-menu" id="sidebar-nav">
+                <ul>
+                    <li class="nav-item">
+                        <a href="../../index.html" class="nav-link">
+                            <i class="fa-solid fa-house"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item accordion-item">
+                        <div class="nav-link accordion-toggle active" style="cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
+                            <div style="display: flex; align-items: center;">
+                                <i class="fa-solid fa-book-open"></i>
+                                Introducción
+                            </div>
+                            <i class="fa-solid fa-chevron-down accordion-icon" style="transition: transform 0.3s ease; transform: rotate(-180deg);"></i>
+                        </div>
+                        <ul class="submenu" style="display: block; padding-left: 1.5rem; list-style: none; margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                            <li class="nav-item" style="margin-bottom: 0.5rem;">
+                                <a href="../Herramientas/index.html" class="nav-link" style="font-size: 0.95rem; padding: 0.6rem 1rem;">
+                                    <i class="fa-solid fa-toolbox"></i>
+                                    Herramientas
+                                </a>
+                            </li>
+                            <li class="nav-item" style="margin-bottom: 0.5rem;">
+                                <a href="index.html" class="nav-link active" style="font-size: 0.95rem; padding: 0.6rem 1rem;">
+                                    <i class="fa-solid fa-rocket"></i>
+                                    Proyecto Final
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Actividad-Diagnostico/index.html" class="nav-link" style="font-size: 0.95rem; padding: 0.6rem 1rem;">
+                                    <i class="fa-solid fa-clipboard-question"></i>
+                                    Diagnóstico
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+
+            <div class="page-header">
+                <span class="hero-tag">Proyecto Final</span>
+                <h1 class="page-title">Portafolio Web Personal</h1>
+                <p class="page-desc">Demuestra tus habilidades en diseño web, maquetación y desarrollo frontend creando un producto profesional que puedas utilizar en tu vida laboral.</p>
+            </div>
+
+            <!-- Objetivo -->
+            <section style="margin-bottom: 3rem;">
+                <h2 class="section-title">Objetivo</h2>
+                <div style="background: var(--glass-bg); border: 1px solid var(--glass-border); border-left: 4px solid var(--accent-primary); border-radius: 16px; padding: 2rem;">
+                    <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">
+                        Desarrollar un sitio web personal tipo portafolio donde el estudiante demuestre sus habilidades en diseño web, maquetación y desarrollo frontend, creando un producto profesional que pueda utilizar en su vida laboral.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Descripción General -->
+            <section style="margin-bottom: 3rem;">
+                <h2 class="section-title">Descripción General</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 1.5rem; line-height: 1.6;">
+                    Cada alumno desarrollará de forma <strong style="color: var(--text-primary);">individual</strong> un sitio web que funcione como su portafolio personal. El proyecto deberá cumplir con lo siguiente:
+                </p>
+                <div class="row g-3">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="feature-card h-100">
+                            <div class="feature-icon"><i class="fa-solid fa-pencil-ruler"></i></div>
+                            <h3>Diseñado previamente</h3>
+                            <p>Presenta un wireframe o mockup antes de comenzar a codificar.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="feature-card h-100">
+                            <div class="feature-icon"><i class="fa-solid fa-code"></i></div>
+                            <h3>Tecnologías de clase</h3>
+                            <p>Desarrollado con las tecnologías y herramientas vistas durante el cuatrimestre.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="feature-card h-100">
+                            <div class="feature-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                            <h3>Responsive</h3>
+                            <p>El sitio debe adaptarse correctamente a dispositivos móviles.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="feature-card h-100">
+                            <div class="feature-icon"><i class="fa-solid fa-globe"></i></div>
+                            <h3>Publicado en internet</h3>
+                            <p>El proyecto debe estar accesible públicamente en línea.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="feature-card h-100">
+                            <div class="feature-icon"><i class="fa-brands fa-github"></i></div>
+                            <h3>Respaldado en GitHub</h3>
+                            <p>Debe subirse y mantenerse en tu repositorio personal con múltiples commits.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contenido Mínimo -->
+            <section style="margin-bottom: 3rem;">
+                <h2 class="section-title">Contenido Mínimo del Sitio</h2>
+                <div class="row g-3">
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="feature-card h-100">
+                            <div class="feature-icon"><i class="fa-solid fa-house"></i></div>
+                            <h3>Inicio</h3>
+                            <ul style="list-style: none; padding: 0; margin-top: 0.75rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                                <li style="display: flex; align-items: center; gap: 0.6rem; color: var(--text-secondary); font-size: 0.95rem;"><i class="fa-solid fa-circle-dot" style="color: var(--accent-primary); font-size: 0.55rem; flex-shrink: 0;"></i> Nombre completo</li>
+                                <li style="display: flex; align-items: center; gap: 0.6rem; color: var(--text-secondary); font-size: 0.95rem;"><i class="fa-solid fa-circle-dot" style="color: var(--accent-primary); font-size: 0.55rem; flex-shrink: 0;"></i> Rol profesional</li>
+                                <li style="display: flex; align-items: center; gap: 0.6rem; color: var(--text-secondary); font-size: 0.95rem;"><i class="fa-solid fa-circle-dot" style="color: var(--accent-primary); font-size: 0.55rem; flex-shrink: 0;"></i> Imagen o avatar</li>
+                                <li style="display: flex; align-items: center; gap: 0.6rem; color: var(--text-secondary); font-size: 0.95rem;"><i class="fa-solid fa-circle-dot" style="color: var(--accent-primary); font-size: 0.55rem; flex-shrink: 0;"></i> Mensaje de presentación</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="feature-card h-100">
+                            <div class="feature-icon"><i class="fa-solid fa-user"></i></div>
+                            <h3>Sobre mí</h3>
+                            <ul style="list-style: none; padding: 0; margin-top: 0.75rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                                <li style="display: flex; align-items: center; gap: 0.6rem; color: var(--text-secondary); font-size: 0.95rem;"><i class="fa-solid fa-circle-dot" style="color: var(--accent-primary); font-size: 0.55rem; flex-shrink: 0;"></i> Descripción personal / profesional</li>
+                                <li style="display: flex; align-items: center; gap: 0.6rem; color: var(--text-secondary); font-size: 0.95rem;"><i class="fa-solid fa-circle-dot" style="color: var(--accent-primary); font-size: 0.55rem; flex-shrink: 0;"></i> Habilidades</li>
+                                <li style="display: flex; align-items: center; gap: 0.6rem; color: var(--text-secondary); font-size: 0.95rem;"><i class="fa-solid fa-circle-dot" style="color: var(--accent-primary); font-size: 0.55rem; flex-shrink: 0;"></i> Tecnologías que maneja</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="feature-card h-100">
+                            <div class="feature-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                            <h3>Proyectos</h3>
+                            <p style="color: var(--text-secondary); font-size: 0.9rem; margin: 0.5rem 0 0.75rem;">Mínimo 2–3 proyectos, cada uno con:</p>
+                            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+                                <li style="display: flex; align-items: center; gap: 0.6rem; color: var(--text-secondary); font-size: 0.95rem;"><i class="fa-solid fa-circle-dot" style="color: var(--accent-primary); font-size: 0.55rem; flex-shrink: 0;"></i> Imagen representativa</li>
+                                <li style="display: flex; align-items: center; gap: 0.6rem; color: var(--text-secondary); font-size: 0.95rem;"><i class="fa-solid fa-circle-dot" style="color: var(--accent-primary); font-size: 0.55rem; flex-shrink: 0;"></i> Descripción</li>
+                                <li style="display: flex; align-items: center; gap: 0.6rem; color: var(--text-secondary); font-size: 0.95rem;"><i class="fa-solid fa-circle-dot" style="color: var(--accent-primary); font-size: 0.55rem; flex-shrink: 0;"></i> Tecnologías utilizadas</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="feature-card h-100">
+                            <div class="feature-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <h3>Contacto</h3>
+                            <ul style="list-style: none; padding: 0; margin-top: 0.75rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                                <li style="display: flex; align-items: center; gap: 0.6rem; color: var(--text-secondary); font-size: 0.95rem;"><i class="fa-solid fa-circle-dot" style="color: var(--accent-primary); font-size: 0.55rem; flex-shrink: 0;"></i> Formulario con validación en JavaScript</li>
+                                <li style="display: flex; align-items: center; gap: 0.6rem; color: var(--text-secondary); font-size: 0.95rem;"><i class="fa-solid fa-circle-dot" style="color: var(--accent-primary); font-size: 0.55rem; flex-shrink: 0;"></i> Redes sociales</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Requisitos Técnicos -->
+            <section style="margin-bottom: 3rem;">
+                <h2 class="section-title">Requisitos Técnicos</h2>
+                <div style="background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 16px; padding: 2rem;">
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.85rem 1rem; background: rgba(102,252,241,0.05); border: 1px solid rgba(102,252,241,0.12); border-radius: 10px; height: 100%;">
+                                <i class="fa-solid fa-circle-check" style="color: var(--accent-primary); flex-shrink: 0;"></i>
+                                <span style="color: var(--text-secondary);">HTML5 semántico</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.85rem 1rem; background: rgba(102,252,241,0.05); border: 1px solid rgba(102,252,241,0.12); border-radius: 10px; height: 100%;">
+                                <i class="fa-solid fa-circle-check" style="color: var(--accent-primary); flex-shrink: 0;"></i>
+                                <span style="color: var(--text-secondary);">CSS3 — Flexbox y/o Grid</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.85rem 1rem; background: rgba(102,252,241,0.05); border: 1px solid rgba(102,252,241,0.12); border-radius: 10px; height: 100%;">
+                                <i class="fa-solid fa-circle-check" style="color: var(--accent-primary); flex-shrink: 0;"></i>
+                                <span style="color: var(--text-secondary);">Uso de Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.85rem 1rem; background: rgba(102,252,241,0.05); border: 1px solid rgba(102,252,241,0.12); border-radius: 10px; height: 100%;">
+                                <i class="fa-solid fa-circle-check" style="color: var(--accent-primary); flex-shrink: 0;"></i>
+                                <span style="color: var(--text-secondary);">JavaScript básico — interactividad</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.85rem 1rem; background: rgba(102,252,241,0.05); border: 1px solid rgba(102,252,241,0.12); border-radius: 10px; height: 100%;">
+                                <i class="fa-solid fa-circle-check" style="color: var(--accent-primary); flex-shrink: 0;"></i>
+                                <span style="color: var(--text-secondary);">Diseño responsive — mobile-first</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.85rem 1rem; background: rgba(102,252,241,0.05); border: 1px solid rgba(102,252,241,0.12); border-radius: 10px; height: 100%;">
+                                <i class="fa-solid fa-circle-check" style="color: var(--accent-primary); flex-shrink: 0;"></i>
+                                <span style="color: var(--text-secondary);">Código ordenado y bien estructurado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Publicación y Repositorio -->
+            <section style="margin-bottom: 3rem;">
+                <div class="row g-4">
+
+                    <!-- Publicación -->
+                    <div class="col-12 col-md-6">
+                        <h2 class="section-title">Publicación <span style="font-size: 0.8rem; font-weight: 500; color: var(--accent-secondary); margin-left: 0.4rem;">(Obligatorio)</span></h2>
+                        <div style="background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 16px; padding: 2rem; height: calc(100% - 3.5rem);">
+                            <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">El sitio deberá estar publicado en internet mediante alguna de estas opciones:</p>
+                            <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.5rem;">
+                                <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; background: rgba(102,252,241,0.05); border: 1px solid rgba(102,252,241,0.15); border-radius: 10px;">
+                                    <i class="fa-brands fa-github" style="color: var(--accent-primary); font-size: 1.1rem; width: 18px;"></i>
+                                    <span style="color: var(--text-primary); font-weight: 500;">GitHub Pages</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; background: rgba(102,252,241,0.05); border: 1px solid rgba(102,252,241,0.15); border-radius: 10px;">
+                                    <i class="fa-solid fa-cloud" style="color: var(--accent-primary); font-size: 1.1rem; width: 18px;"></i>
+                                    <span style="color: var(--text-primary); font-weight: 500;">Netlify</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; background: rgba(102,252,241,0.05); border: 1px solid rgba(102,252,241,0.15); border-radius: 10px;">
+                                    <i class="fa-solid fa-triangle" style="color: var(--accent-primary); font-size: 1.1rem; width: 18px;"></i>
+                                    <span style="color: var(--text-primary); font-weight: 500;">Vercel</span>
+                                </div>
+                            </div>
+                            <div style="padding: 0.75rem 1rem; background: rgba(255,80,80,0.07); border: 1px solid rgba(255,80,80,0.2); border-radius: 10px;">
+                                <p style="color: #ff8080; font-size: 0.9rem; font-weight: 500;">
+                                    <i class="fa-solid fa-ban" style="margin-right: 0.5rem;"></i>No se aceptan proyectos solo en local
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repositorio -->
+                    <div class="col-12 col-md-6">
+                        <h2 class="section-title">Repositorio <span style="font-size: 0.8rem; font-weight: 500; color: var(--accent-secondary); margin-left: 0.4rem;">(Requisito clave)</span></h2>
+                        <div style="background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 16px; padding: 2rem; height: calc(100% - 3.5rem);">
+                            <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">Cada alumno deberá utilizar su cuenta personal de <strong style="color: var(--accent-primary);">GitHub</strong> y cumplir con:</p>
+                            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.85rem;">
+                                <li style="display: flex; align-items: flex-start; gap: 0.75rem; color: var(--text-secondary); font-size: 0.95rem;">
+                                    <i class="fa-solid fa-check" style="color: var(--accent-primary); margin-top: 3px; flex-shrink: 0;"></i>
+                                    Crear un repositorio personal
+                                </li>
+                                <li style="display: flex; align-items: flex-start; gap: 0.75rem; color: var(--text-secondary); font-size: 0.95rem;">
+                                    <i class="fa-solid fa-check" style="color: var(--accent-primary); margin-top: 3px; flex-shrink: 0;"></i>
+                                    Subir el proyecto en una carpeta independiente del resto de trabajos
+                                </li>
+                                <li style="display: flex; align-items: flex-start; gap: 0.75rem; color: var(--text-secondary); font-size: 0.95rem;">
+                                    <i class="fa-solid fa-check" style="color: var(--accent-primary); margin-top: 3px; flex-shrink: 0;"></i>
+                                    Mantener orden en archivos y carpetas
+                                </li>
+                                <li style="display: flex; align-items: flex-start; gap: 0.75rem; color: var(--text-secondary); font-size: 0.95rem;">
+                                    <i class="fa-solid fa-check" style="color: var(--accent-primary); margin-top: 3px; flex-shrink: 0;"></i>
+                                    Realizar múltiples commits (no subir todo en un solo intento)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Presentaciones -->
+            <section style="margin-bottom: 3rem;">
+                <h2 class="section-title">Presentaciones del Proyecto</h2>
+                <div class="row g-3">
+
+                    <div class="col-12 col-md-6"><div class="feature-card h-100">
+                        <div class="feature-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <h3>Presentación Final <span class="hero-tag" style="font-size: 0.7rem; padding: 0.2rem 0.65rem; margin-left: 0.4rem; vertical-align: middle;">Obligatoria</span></h3>
+                        <p style="color: var(--text-secondary); margin: 0.75rem 0; font-size: 0.9rem;">Se realiza el día del examen final. El alumno deberá:</p>
+                        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+                            <li style="display: flex; align-items: flex-start; gap: 0.6rem; color: var(--text-secondary); font-size: 0.9rem;"><i class="fa-solid fa-circle-dot" style="color: var(--accent-primary); font-size: 0.55rem; margin-top: 5px; flex-shrink: 0;"></i> Mostrar el sitio en funcionamiento</li>
+                            <li style="display: flex; align-items: flex-start; gap: 0.6rem; color: var(--text-secondary); font-size: 0.9rem;"><i class="fa-solid fa-circle-dot" style="color: var(--accent-primary); font-size: 0.55rem; margin-top: 5px; flex-shrink: 0;"></i> Explicar su estructura</li>
+                            <li style="display: flex; align-items: flex-start; gap: 0.6rem; color: var(--text-secondary); font-size: 0.9rem;"><i class="fa-solid fa-circle-dot" style="color: var(--accent-primary); font-size: 0.55rem; margin-top: 5px; flex-shrink: 0;"></i> Justificar su diseño</li>
+                            <li style="display: flex; align-items: flex-start; gap: 0.6rem; color: var(--text-secondary); font-size: 0.9rem;"><i class="fa-solid fa-circle-dot" style="color: var(--accent-primary); font-size: 0.55rem; margin-top: 5px; flex-shrink: 0;"></i> Demostrar funcionalidades</li>
+                        </ul>
+                    </div></div>
+
+                    <div class="col-12 col-md-6"><div class="feature-card h-100">
+                        <div class="feature-icon"><i class="fa-solid fa-users"></i></div>
+                        <h3>Presentación Tipo Evento <span class="hero-tag" style="font-size: 0.7rem; padding: 0.2rem 0.65rem; margin-left: 0.4rem; vertical-align: middle; background: rgba(69,162,158,0.15); border-color: rgba(69,162,158,0.3); color: var(--accent-secondary);">Vespertino</span></h3>
+                        <p style="color: var(--text-secondary); margin: 0.75rem 0; font-size: 0.9rem;">No es obligatoria, pero es altamente recomendable. Sus objetivos:</p>
+                        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.5rem;">
+                            <li style="display: flex; align-items: flex-start; gap: 0.6rem; color: var(--text-secondary); font-size: 0.9rem;"><i class="fa-solid fa-circle-dot" style="color: var(--accent-secondary); font-size: 0.55rem; margin-top: 5px; flex-shrink: 0;"></i> Simular un entorno profesional real</li>
+                            <li style="display: flex; align-items: flex-start; gap: 0.6rem; color: var(--text-secondary); font-size: 0.9rem;"><i class="fa-solid fa-circle-dot" style="color: var(--accent-secondary); font-size: 0.55rem; margin-top: 5px; flex-shrink: 0;"></i> Practicar exposición ante público real</li>
+                            <li style="display: flex; align-items: flex-start; gap: 0.6rem; color: var(--text-secondary); font-size: 0.9rem;"><i class="fa-solid fa-circle-dot" style="color: var(--accent-secondary); font-size: 0.55rem; margin-top: 5px; flex-shrink: 0;"></i> Recibir retroalimentación externa</li>
+                            <li style="display: flex; align-items: flex-start; gap: 0.6rem; color: var(--text-secondary); font-size: 0.9rem;"><i class="fa-solid fa-circle-dot" style="color: var(--accent-secondary); font-size: 0.55rem; margin-top: 5px; flex-shrink: 0;"></i> Asistencia de personas externas</li>
+                        </ul>
+                    </div></div>
+
+                </div>
+            </section>
+
+            <!-- Evaluación -->
+            <section style="margin-bottom: 3rem;">
+                <h2 class="section-title">Evaluación</h2>
+                <div class="table-container">
+                    <table class="eval-table">
+                        <thead>
+                            <tr>
+                                <th>Categoría</th>
+                                <th>Criterio</th>
+                                <th>Ponderación</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="criterion-name" data-label="Categoría">🎨 Diseño</td>
+                                <td data-label="Criterio">UX / UI</td>
+                                <td data-label="Ponderación"><span class="weight-badge">30%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="criterion-name" data-label="Categoría">🎨 Diseño</td>
+                                <td data-label="Criterio">Diseño visual</td>
+                                <td data-label="Ponderación"><span class="weight-badge">20%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="criterion-name" data-label="Categoría">💻 Desarrollo</td>
+                                <td data-label="Criterio">Código limpio y estructurado</td>
+                                <td data-label="Ponderación"><span class="weight-badge">20%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="criterion-name" data-label="Categoría">💻 Desarrollo</td>
+                                <td data-label="Criterio">Diseño responsive</td>
+                                <td data-label="Ponderación"><span class="weight-badge">10%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="criterion-name" data-label="Categoría">💻 Desarrollo</td>
+                                <td data-label="Criterio">Funcionalidad</td>
+                                <td data-label="Ponderación"><span class="weight-badge">10%</span></td>
+                            </tr>
+                            <tr>
+                                <td class="criterion-name" data-label="Categoría">🎤 Presentación</td>
+                                <td data-label="Criterio">Claridad y dominio del proyecto</td>
+                                <td data-label="Ponderación"><span class="weight-badge">10%</span></td>
+                            </tr>
+                            <tr style="border-top: 2px solid var(--accent-primary);">
+                                <td class="criterion-name" data-label="Categoría" colspan="2" style="color: var(--accent-primary);">Total</td>
+                                <td data-label="Ponderación"><span class="weight-badge" style="background: rgba(102,252,241,0.25);">100%</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Condiciones Importantes -->
+            <section style="margin-bottom: 3rem;">
+                <h2 class="section-title">Condiciones Importantes</h2>
+                <div style="background: rgba(255,80,80,0.05); border: 1px solid rgba(255,80,80,0.2); border-radius: 16px; padding: 2rem;">
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 1rem;">
+                        <strong style="color: #ff8080;"><i class="fa-solid fa-ban" style="margin-right: 0.5rem;"></i>No se aceptan</strong> proyectos con alguna de las siguientes condiciones:
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.85rem 1rem; background: rgba(255,80,80,0.05); border: 1px solid rgba(255,80,80,0.15); border-radius: 10px;">
+                                <i class="fa-solid fa-xmark" style="color: #ff8080; flex-shrink: 0;"></i>
+                                <span style="color: var(--text-secondary);">Proyectos incompletos</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.85rem 1rem; background: rgba(255,80,80,0.05); border: 1px solid rgba(255,80,80,0.15); border-radius: 10px;">
+                                <i class="fa-solid fa-xmark" style="color: #ff8080; flex-shrink: 0;"></i>
+                                <span style="color: var(--text-secondary);">Sitios no funcionales</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.85rem 1rem; background: rgba(255,80,80,0.05); border: 1px solid rgba(255,80,80,0.15); border-radius: 10px;">
+                                <i class="fa-solid fa-xmark" style="color: #ff8080; flex-shrink: 0;"></i>
+                                <span style="color: var(--text-secondary);">Código desordenado</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div style="display: flex; align-items: center; gap: 0.75rem; padding: 0.85rem 1rem; background: rgba(255,80,80,0.05); border: 1px solid rgba(255,80,80,0.15); border-radius: 10px;">
+                                <i class="fa-solid fa-xmark" style="color: #ff8080; flex-shrink: 0;"></i>
+                                <span style="color: var(--text-secondary);">Páginas no responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2026 Materia Diseño de Página Web. Todos los derechos reservados.</p>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scripts -->
+    <script src="../../js/script.js"></script>
+</body>
+</html>

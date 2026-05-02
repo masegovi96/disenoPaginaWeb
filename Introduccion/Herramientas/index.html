@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas | Diseño de Página Web</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="app-container">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header dropdown-header">
+                <h2>Diseño de Página Web <i class="fa-solid fa-chevron-down"></i></h2>
+            </div>
+            <nav class="sidebar-nav collapse-menu" id="sidebar-nav">
+                <ul>
+                    <li class="nav-item">
+                        <a href="../../index.html" class="nav-link">
+                            <i class="fa-solid fa-house"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item accordion-item">
+                        <div class="nav-link accordion-toggle active" style="cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
+                            <div style="display: flex; align-items: center;">
+                                <i class="fa-solid fa-book-open"></i>
+                                Introducción
+                            </div>
+                            <i class="fa-solid fa-chevron-down accordion-icon" style="transition: transform 0.3s ease; transform: rotate(-180deg);"></i>
+                        </div>
+                        <ul class="submenu" style="display: block; padding-left: 1.5rem; list-style: none; margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                            <li class="nav-item" style="margin-bottom: 0.5rem;">
+                                <a href="index.html" class="nav-link active" style="font-size: 0.95rem; padding: 0.6rem 1rem;">
+                                    <i class="fa-solid fa-toolbox"></i>
+                                    Herramientas
+                                </a>
+                            </li>
+                            <li class="nav-item" style="margin-bottom: 0.5rem;">
+                                <a href="../Proyecto-Final/index.html" class="nav-link" style="font-size: 0.95rem; padding: 0.6rem 1rem;">
+                                    <i class="fa-solid fa-rocket"></i>
+                                    Proyecto Final
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Actividad-Diagnostico/index.html" class="nav-link" style="font-size: 0.95rem; padding: 0.6rem 1rem;">
+                                    <i class="fa-solid fa-clipboard-question"></i>
+                                    Diagnóstico
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="page-header">
+                <h1 class="page-title">Herramientas de la Clase</h1>
+                <p class="page-desc">Encuentra aquí el listado de software, extensiones y recursos en línea que utilizaremos a lo largo del cuatrimestre.</p>
+            </div>
+
+            <div class="content-card">
+                <i class="fa-brands fa-google" style="font-size: 2rem; color: var(--primary-color, #6c63ff); margin-bottom: 1rem; display: block;"></i>
+                <h2>Código de Classroom</h2>
+                <p>Únete a nuestra clase en Google Classroom para subir tus tareas y participaciones:</p>
+                <div class="classroom-code" style="background: var(--bg-color, #121212); border: 2px dashed var(--primary-color, #6c63ff); padding: 1rem; text-align: center; font-size: 2rem; font-weight: bold; letter-spacing: 5px; margin: 1rem 0; border-radius: 8px;">
+                    <!-- Espacio para el código -->
+                    [CÓDIGO AQUÍ]
+                </div>
+            </div>
+
+            <div class="content-card">
+                <i class="fa-brands fa-github" style="font-size: 2rem; color: var(--primary-color, #6c63ff); margin-bottom: 1rem; display: block;"></i>
+                <h2>Repositorio de GitHub</h2>
+                <p>Todo el código, recursos y proyectos de clase se encuentran en nuestro repositorio oficial.</p>
+                <button id="qrModalBtn" class="btn-primary" style="margin-top: 1rem; padding: 0.8rem 1.5rem; background: var(--primary-color, #6c63ff); color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 1rem; font-weight: bold;">
+                    <i class="fa-solid fa-qrcode"></i> Ver Código QR del Repositorio
+                </button>
+            </div>
+
+            <!-- Modal para el QR -->
+            <div id="qrModal" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);">
+                <div class="modal-content" style="background-color: var(--bg-alt, #1a1a1a); margin: 10% auto; padding: 20px; border: 1px solid #888; width: 90%; max-width: 400px; border-radius: 12px; text-align: center; position: relative;">
+                    <span class="close-modal" id="closeQrModal" style="color: #aaa; position: absolute; top: 10px; right: 20px; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                    <h2 style="margin-bottom: 1rem;">Repositorio de la Clase</h2>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://github.com/masegovi96/disenoPaginaWeb.git" alt="QR Code Github" style="max-width: 100%; border-radius: 8px; border: 4px solid white; background: white;">
+                    <p style="margin-top: 1rem; word-break: break-all; font-size: 0.9rem;">https://github.com/masegovi96/disenoPaginaWeb.git</p>
+                </div>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 Materia Diseño de Página Web. Todos los derechos reservados.</p>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../js/script.js"></script>
+</body>
+</html>
