@@ -16,6 +16,8 @@
         if (path.indexOf('/herramientas/') !== -1) return 'herramientas';
         if (path.indexOf('/proyecto-final/') !== -1) return 'proyecto-final';
         if (path.indexOf('/actividad-diagnostico/') !== -1) return 'diagnostico';
+        if (path.indexOf('/unidad1/presentacion/') !== -1) return 'u1-presentacion';
+        if (path.indexOf('/unidad1/participacion1/') !== -1) return 'u1-participacion1';
         return 'home';
     }
 
@@ -24,6 +26,10 @@
         var intro = (active === 'herramientas' || active === 'proyecto-final' || active === 'diagnostico');
         var submenuDisplay = intro ? 'block' : 'none';
         var chevronRotate = intro ? 'transform: rotate(-180deg);' : '';
+
+        var u1Active = (active === 'u1-presentacion' || active === 'u1-participacion1');
+        var u1SubmenuDisplay = u1Active ? 'block' : 'none';
+        var u1ChevronRotate = u1Active ? 'transform: rotate(-180deg);' : '';
 
         function navLink(href, icon, label, isActive, extraStyle) {
             var activeClass = isActive ? ' active' : '';
@@ -62,6 +68,23 @@
             +         '</li>'
             +         '<li class="nav-item">'
             +           navLink('introduccion/actividad-diagnostico/index.html', 'fa-solid fa-clipboard-question', 'Diagnóstico', active === 'diagnostico', 'font-size: 0.95rem; padding: 0.6rem 1rem;')
+            +         '</li>'
+            +       '</ul>'
+            +     '</li>'
+            +     '<li class="nav-item accordion-item">'
+            +       '<div class="nav-link accordion-toggle' + (u1Active ? ' active' : '') + '" style="cursor: pointer; display: flex; align-items: center; justify-content: space-between;">'
+            +         '<div style="display: flex; align-items: center;">'
+            +           '<i class="fa-solid fa-layer-group"></i>'
+            +           '<span class="nav-label">Unidad 1: Fundamentos de UX/UI y Herramientas</span>'
+            +         '</div>'
+            +         '<i class="fa-solid fa-chevron-down accordion-icon nav-label" style="transition: transform 0.3s ease; ' + u1ChevronRotate + '"></i>'
+            +       '</div>'
+            +       '<ul class="submenu" style="display: ' + u1SubmenuDisplay + '; padding-left: 1.5rem; list-style: none; margin-top: 0.5rem; margin-bottom: 0.5rem;">'
+            +         '<li class="nav-item" style="margin-bottom: 0.5rem;">'
+            +           navLink('Unidad1/Presentacion/index.html', 'fa-solid fa-file-powerpoint', 'Presentación', active === 'u1-presentacion', 'font-size: 0.95rem; padding: 0.6rem 1rem;')
+            +         '</li>'
+            +         '<li class="nav-item">'
+            +           navLink('Unidad1/Participacion1/index.html', 'fa-solid fa-magnifying-glass', 'Actividad de Participación 1', active === 'u1-participacion1', 'font-size: 0.95rem; padding: 0.6rem 1rem;')
             +         '</li>'
             +       '</ul>'
             +     '</li>'

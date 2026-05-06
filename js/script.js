@@ -75,22 +75,23 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Acordeón: expande y colapsa el submenú de Introducción en el sidebar.
-    var accordionToggle = document.querySelector('.accordion-toggle');
-    var submenu = document.querySelector('.submenu');
+    // Acordeón: expande y colapsa cada submenú del sidebar (soporta múltiples acordeones).
+    var accordionToggles = document.querySelectorAll('.accordion-toggle');
+    accordionToggles.forEach(function (toggle) {
+        var submenu = toggle.nextElementSibling;
+        if (!submenu || !submenu.classList.contains('submenu')) return;
 
-    if (accordionToggle && submenu) {
-        accordionToggle.addEventListener('click', function () {
-            var accordionIcon = accordionToggle.querySelector('.accordion-icon');
+        toggle.addEventListener('click', function () {
+            var accordionIcon = toggle.querySelector('.accordion-icon');
             var isOpen = submenu.style.display === 'block';
 
             submenu.style.display = isOpen ? 'none' : 'block';
             if (accordionIcon) {
                 accordionIcon.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(-180deg)';
             }
-            accordionToggle.classList.toggle('active', !isOpen);
+            toggle.classList.toggle('active', !isOpen);
         });
-    }
+    });
 
     // Tema: aplica modo claro/oscuro y lo persiste en localStorage.
     function applyTheme(theme) {
