@@ -1046,3 +1046,18 @@ footer {
 
 .info-card-header .feature-icon { margin-bottom: 0; flex-shrink: 0; }
 .repo-link i { color: var(--accent-secondary); margin-right: 0.4rem; }
+
+.pdf-embed-container {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    background: var(--bg-secondary);
+    margin-top: 1.5rem;
+}
+.pdf-embed-container iframe {
+    width: 100%;
+    height: 80vh;
+    border: none;
+    display: block;
+}
