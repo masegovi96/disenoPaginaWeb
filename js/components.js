@@ -18,6 +18,7 @@
         if (path.indexOf('/actividad-diagnostico/') !== -1) return 'diagnostico';
         if (path.indexOf('/unidad1/presentacion/') !== -1) return 'u1-presentacion';
         if (path.indexOf('/unidad1/participacion1/') !== -1) return 'u1-participacion1';
+        if (path.indexOf('/unidad1/tarea1/') !== -1) return 'u1-tarea1';
         return 'home';
     }
 
@@ -27,7 +28,7 @@
         var submenuDisplay = intro ? 'block' : 'none';
         var chevronRotate = intro ? 'transform: rotate(-180deg);' : '';
 
-        var u1Active = (active === 'u1-presentacion' || active === 'u1-participacion1');
+        var u1Active = (active === 'u1-presentacion' || active === 'u1-participacion1' || active === 'u1-tarea1');
         var u1SubmenuDisplay = u1Active ? 'block' : 'none';
         var u1ChevronRotate = u1Active ? 'transform: rotate(-180deg);' : '';
 
@@ -83,8 +84,11 @@
             +         '<li class="nav-item" style="margin-bottom: 0.5rem;">'
             +           navLink('Unidad1/Presentacion/index.html', 'fa-solid fa-file-powerpoint', 'Presentación', active === 'u1-presentacion', 'font-size: 0.95rem; padding: 0.6rem 1rem;')
             +         '</li>'
-            +         '<li class="nav-item">'
+            +         '<li class="nav-item" style="margin-bottom: 0.5rem;">'
             +           navLink('Unidad1/Participacion1/index.html', 'fa-solid fa-magnifying-glass', 'Actividad de Participación 1', active === 'u1-participacion1', 'font-size: 0.95rem; padding: 0.6rem 1rem;')
+            +         '</li>'
+            +         '<li class="nav-item">'
+            +           navLink('Unidad1/Tarea1/index.html', 'fa-solid fa-file-pdf', 'Tarea 1', active === 'u1-tarea1', 'font-size: 0.95rem; padding: 0.6rem 1rem;')
             +         '</li>'
             +       '</ul>'
             +     '</li>'
