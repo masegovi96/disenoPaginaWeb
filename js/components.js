@@ -96,6 +96,9 @@
             + '<li class="nav-item">'
             + navLink('Unidad1/Tarea 2/index.html', 'fa-solid fa-file-pdf', 'Tarea 2', active === 'u1-tarea2', 'font-size: 0.95rem; padding: 0.6rem 1rem;')
             + '</li>'
+                        + '<li class="nav-item">'
+            + navLink('Unidad1/Participacion3/index.html', 'fa-solid fa-file-pdf', 'Actividad de Participación 3', active === 'u1-participacion3', 'font-size: 0.95rem; padding: 0.6rem 1rem;')
+            + '</li>'
             + '</ul>'
             + '</li>'
             + '</ul>'
